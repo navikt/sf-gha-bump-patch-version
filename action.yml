@@ -11,6 +11,9 @@ runs:
     - name: Update patch version
       id: release
       run: |
+
+        echo "Starting to bump patch version for packages: $PACKAGE_NAMES"
+        echo "Input package names: ${{ github.inputs.package_names }}"
         # Read the current sfdx-project.json
         INPUT_FILE="sfdx-project.json"
         NEXT="NEXT"
