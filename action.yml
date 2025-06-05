@@ -75,4 +75,4 @@ runs:
         done
       shell: bash
       env:
-        PACKAGE_NAMES: ${{ github.event.inputs.package_names }}
+        PACKAGE_NAMES: ${{ github.inputs.package_names }}
